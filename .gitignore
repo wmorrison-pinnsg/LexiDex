@@ -1,0 +1,16 @@
+## Build results
+bin/
+obj/
+
+## Visual Studio
+.vs/
+
+## Embeddings model (416MB - download separately)
+Models/model.onnx
+
+## Generated databases
+*.db
+
+## User-specific files
+*.user
+*.suo
