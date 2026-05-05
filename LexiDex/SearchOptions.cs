@@ -1,4 +1,4 @@
-namespace SemanticSearch;
+namespace LexiDex;
 
 public class SearchOptions
 {

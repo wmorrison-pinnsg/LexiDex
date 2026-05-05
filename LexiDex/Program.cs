@@ -1,8 +1,8 @@
 using System.CommandLine;
 using Spectre.Console;
-using SemanticSearch;
+using LexiDex;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 class Program
 {
@@ -12,7 +12,7 @@ class Program
         if (!File.Exists(Path.Combine(modelDir, "model.onnx")))
             modelDir = Path.Combine("Models");
 
-        var rootCommand = new RootCommand("SemanticSearch — Local semantic search powered by BGE embeddings");
+        var rootCommand = new RootCommand("LexiDex — Local semantic search powered by BGE embeddings");
 
         // --- index command ---
         var indexDirArg = new Argument<string>("directory") { Description = "Directory to index" };
@@ -49,7 +49,7 @@ class Program
                 return 1;
             }
 
-            AnsiConsole.Write(new FigletText("SemanticSearch").Color(Color.Blue));
+            AnsiConsole.Write(new FigletText("LexiDex").Color(Color.Blue));
             AnsiConsole.WriteLine();
 
             using var engine = new SearchEngine(modelDir);
@@ -120,7 +120,7 @@ class Program
             var query = parseResult.GetValue(queryArg)!;
             var topK = parseResult.GetValue(topKOpt);
 
-            AnsiConsole.Write(new FigletText("SemanticSearch").Color(Color.Blue));
+            AnsiConsole.Write(new FigletText("LexiDex").Color(Color.Blue));
 
             using var engine = new SearchEngine(modelDir);
 

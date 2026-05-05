@@ -1,6 +1,6 @@
 using Microsoft.Extensions.VectorData;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 /// <summary>
 /// Represents a chunk of text stored in the SQLite vector store.

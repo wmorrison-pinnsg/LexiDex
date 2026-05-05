@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 /// <summary>
 /// Minimal BERT WordPiece tokenizer that reads HuggingFace tokenizer.json format.

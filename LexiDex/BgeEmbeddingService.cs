@@ -1,7 +1,7 @@
 using Microsoft.ML.OnnxRuntime;
 using Microsoft.ML.OnnxRuntime.Tensors;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 /// <summary>
 /// Embedding generation using BGE-small-en-v1.5 via ONNX Runtime.

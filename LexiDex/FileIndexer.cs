@@ -2,7 +2,7 @@ using System.Text;
 using Markdig;
 using UglyToad.PdfPig;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 /// <summary>
 /// Reads local files (.txt, .md, .pdf), splits them into chunks, and returns them for embedding.

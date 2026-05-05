@@ -2,7 +2,7 @@ using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.VectorData;
 using Microsoft.SemanticKernel.Connectors.Sqlite;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 /// <summary>
 /// Core semantic search engine — indexes documents into a SQLite vector store and queries them.
@@ -35,7 +35,7 @@ public class SearchEngine : IDisposable
         if (!File.Exists(Path.Combine(_modelDir, "model.onnx")))
             baseDir = ".";
 
-        return Path.Combine(baseDir, $"semanticsearch_{hash}.db");
+        return Path.Combine(baseDir, $"lexidex_{hash}.db");
     }
 
     public bool IndexExists(string directory) => File.Exists(GetDbPath(directory));

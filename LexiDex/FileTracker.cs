@@ -1,6 +1,6 @@
 using Microsoft.Data.Sqlite;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 public enum FileStatus { New, Modified, Unchanged }
 

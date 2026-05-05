@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace SemanticSearch;
+namespace LexiDex;
 
 public enum LanguageFamily
 {
