@@ -14,3 +14,6 @@ Models/model.onnx
 ## User-specific files
 *.user
 *.suo
+/.claude/settings.local.json
+/LexiDex/Properties/launchSettings.json
+/LexiDex/Models/model.onnx
